@@ -1,0 +1,102 @@
+body{
+    background: #D4E3DE;
+  }
+  
+  
+  
+  #quote-box{
+    position: relative;
+    border: 1px solid black;
+    height: 300px;
+    width: 60%;
+    margin: 150px auto;
+    background-color: #F6F9F8;
+    border-radius: 2%;
+    
+  }
+  
+  #text {
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  
+  }
+  #author {
+    font-size: 12px;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+  }
+  
+  #new-quote{
+   position: absolute;
+   top: 80%;
+   right: 10%;
+  background-color: #E9F1EE;
+  color:  #1DA1F2;
+  font-weight: bold;
+  font: Helvetica neue;
+  
+  }
+  
+  #tweet-button{
+    position: absolute;
+    top: 80%;
+    left:10%;
+    background-color: #E9F1EE;
+    font-weight: bold;
+   
+    
+  }
+  
+  /* TABLET LANDSCAPE / DESKTOP */
+  @media only screen and (min-width: 1024px) {
+  #quote-box{
+    text-align: center;
+    width: 70vw;
+    height: 50vh;
+    
+  }
+  
+  }    
+  
+    /* SMARTPHONES PORTRAIT */
+  @media screen and (max-width: 300px) {
+   
+    #quote-box{
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    
+    }
+    
+    #text {
+      font-size: 15px;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+  }
+  
+  
+  
+  
+  /* SMARTPHONES LANDSCAPE */
+  @media only screen and (max-width: 480px) {
+    
+    #quote-box{
+    text-align: center;
+    width: 90vw;
+    height: 90vh;
+  
+  
+  }
+  }
+  
+  /* TABLETS PORTRAIT */
+  @media only screen and (max-width: 768px) {
+    
+    #quote-box{
+    text-align: center;
+    width: 80vw;
+    height: 80vh;
+    }
+  }
+  
