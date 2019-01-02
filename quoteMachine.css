@@ -22,11 +22,7 @@ body{
     font-family: "Comic Sans MS", cursive, sans-serif;
   
   }
-  #author {
-    font-size: 12px;
-    font-family:"Comic Sans MS", cursive, sans-serif;
-  }
-  
+
   #new-quote{
    position: absolute;
    top: 80%;

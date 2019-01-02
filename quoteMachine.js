@@ -6,22 +6,20 @@ const href = document.querySelector("href");
 
 
 
-const url = "https://talaikis.com/api/quotes/random/";
-  fetch(url)
+//const url = 'https://ron-swanson-quotes.herokuapp.com/v2/quotes';
+fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
   .then(function(response){
     return response.json();
   })
   .then(function(data){
-    const quote = data.quote; 
-    const authorVar = data.author;
+    const quote = data;
     text.textContent = quote;
-    author.textContent = authorVar;
+  
     
           
    twitter.addEventListener("click",function(){
-   twitter.setAttribute("href", "https://twitter.com/intent/tweet?text=" + encodeURIComponent(quote + " -" +authorVar));
+   twitter.setAttribute("href", "https://twitter.com/intent/tweet?text=" + encodeURIComponent(quote));
                                                                           
-  // window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(quote + " -" +authorVar));
    });
 
   })
@@ -31,20 +29,19 @@ const url = "https://talaikis.com/api/quotes/random/";
   })
 
 btn.addEventListener("click", function(){
-  fetch(url)
+  fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
   .then(function(response){
     return response.json();
   })
   .then(function(data){
-    const quoteNew = data.quote; 
-    const authorVarNew = data.author;
+    const quoteNew = data; 
     text.textContent = quoteNew;
-    author.textContent = authorVarNew;
+    
        
        
    twitter.addEventListener("click",function(){
-   twitter.setAttribute("href", "https://twitter.com/intent/tweet?text=" + encodeURIComponent(quoteNew + " -" +authorVarNew));
-   //window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(quoteNew + " -" +authorVarNew));
+   twitter.setAttribute("href", "https://twitter.com/intent/tweet?text=" + encodeURIComponent(quoteNew));
+  
    });
 
   })
